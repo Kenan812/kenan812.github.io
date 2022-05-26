@@ -1,0 +1,37 @@
+{
+  "name": "mafia",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://kenan812.github.io",
+  "dependencies": {
+    "@craco/craco": "^6.4.3",
+    "axios": "^0.27.2",
+    "gh-pages": "^4.0.0",
+    "prop-types": "15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.3.3",
+    "react-scripts": "4.0.3"
+  },
+  "scripts": {
+    "start": "craco start",
+    "build": "craco build",
+    "test": "craco test --env=jsdom",
+    "eject": "craco eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
