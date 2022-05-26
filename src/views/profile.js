@@ -21,7 +21,7 @@ const Profile = (props) => {
   }, []);
   const sessions = jsonData.Sessions;
 
-  const listItems = Array.from(sessions).map((d) => <li key={d.sessionName} className='profile-list-item list-item'> {d.sessionName} {d.startTime}   {d.endTime}</li>);
+  // const listItems = Array.from(sessions).map((d) => <li key={d.sessionName} className='profile-list-item list-item'> {d.sessionName} {d.startTime}   {d.endTime}</li>);
 
   const urlForPut = `https://bsite.net/Kanan02/api/Auth/${jsonData.Id}`;
   const [confirm, setConfirm] = useState(false);
@@ -194,7 +194,7 @@ const Profile = (props) => {
         </div>
         <div className="profile-container15">
           <ul className="profile-ul list">
-            {listItems}
+            {/* {listItems} */}
           </ul>
         </div>
       </div>
